@@ -1,0 +1,557 @@
+<html>
+<head>
+<title> Albums </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+
+
+* {box-sizing: border-box;}
+
+
+body {
+  background: linear-gradient(to bottom, #ffffff 0%, #ffcccc 100%);
+  background-size: 100% 180%;
+  background-repeat: no-repeat;
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+
+
+.glow {
+  font-size: 6vw;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+  height:0px;
+  padding:0px;
+  line-height:0px;
+  display:block;
+}
+
+
+
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #ffcccc;
+
+  border: 0.2vw solid #ccc;
+  height:4.5vw;
+  width:100%;
+        }
+
+
+.topnav a.links {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 1.2vw 1.2vw;
+  text-decoration: none;
+  font-size: 1.7vw;
+  position: relative;
+          }
+
+#logo .logo {
+    float:left;
+    height:4.5vw;
+    width: 6vw;
+}
+
+.topnav a:hover {
+  background-color: #ccc;
+  color: black;
+                }
+
+.topnav a.home {
+  background-color: #ccc;
+  color: black;
+  height:4.5vw;
+  width: 7vw;
+                 }
+
+.topnav a.about {
+  background-color: #ffffff;
+  color: black;
+  height:4.5vw;
+  width: 7vw;
+                 }
+
+.topnav a.songs {
+  background-color: #ccc;
+  color: black;
+  height:4.5vw;
+  width: 7vw;
+                 }
+
+.topnav a.albums {
+  background-color: #ffffff;
+  color: black;
+  height:4.5vw;
+  width:8vw;
+                 }
+
+.topnav .search-container {
+  float: right;
+  height:4vw;
+  width:23.5vw;
+                          }
+
+.topnav input[type=text] {
+  float: left;
+  padding: 0vw 0.5vw;
+  border: none;
+  margin-top: 0.5vw;
+  margin-bottom: 1.4vw;
+  margin-right: 0vw;
+  font-size: 1.7vw;
+  width:20.1vw;
+  height: 3.15vw;
+                         }
+
+.topnav .search {
+  float: right;
+  padding: 0% 1%;
+  margin-top: 2.1%;
+  margin-right: 1.5%;
+  background: #ddd;
+  font-size: 1.5vw;
+  border: none;
+  cursor: pointer;
+  width:12.89%;
+  height:79%;
+                                 }
+
+.topnav .search:hover {
+  background: #ccc;
+                                       }
+
+.navbar, .dropdown-content, .dropdown {
+    display:none;
+}
+
+@media screen and (max-width: 600px) {
+
+.albumpics {
+   margin: 0 0 0 0;
+}
+
+  .navbar {
+  display:block;
+  overflow: hidden;
+  background-color: #ffcccc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16vw;
+  color: white;
+  text-align: center;
+  padding: 14vw 16vw;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+  display: block;
+}
+
+.logo {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown, .logo, .dropbtn {
+  cursor: pointer;
+  font-size: 5.5vw;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 3.5vw 4vw;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.logo {
+  padding: 6vw 0 5vw 3.5vw;
+  font-size: 6vw;
+  font-family: copperplate gothic;
+  }
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position:relative ;
+  background-color: #f9f9f9;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 3vw 8vw;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  width:100%;
+  background-color: #f9f9f9;
+}
+
+.dropdown-content a:hover {
+  background-color: #ccc;
+}
+
+.topnav {
+  display:none;
+}
+
+
+
+}
+
+
+.flip-card {
+
+  width: 19vw;
+  height: 19vw;
+  perspective:300vw;
+  display: inline-block;
+  margin: 5vw 6vw 5vw 6vw;
+}
+
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.fc {
+  padding: 0.5vw 0 0 0;
+  height:18.5vw;
+  width: 18.2vw;
+}
+
+.info {
+    color: black;
+    font-family: century gothic;
+    margin: 1vw 1vw 1vw 1vw;
+    font-size: 1.5vw;
+}
+
+.albumpics {
+   margin: 0 0 0 2.8vw;
+}
+
+.imgtxt {
+   font-size:1.2vw;
+   font-family: century gothic;
+   margin: 0 1vw 0 1vw;
+}
+
+.imgtitle {
+   font-size:1.5vw;
+   font-family: century gothic;
+   margin: 4.5vw 1vw 0 1vw;
+}
+
+@media screen and (max-width:600px) {
+  
+.fc {
+  padding: 0 0 0 0;
+  height:80vw;
+  width: 80vw;
+}
+
+.glow {
+  font-size: 10vw;
+  color: #fff;
+  text-align: center;
+  height:0px;
+  padding:0px;
+  line-height:0px;
+  display:block;
+}
+
+.info {
+    color: black;
+    font-family: century gothic;
+    margin: 1vw 1vw 1vw 2vw;
+    font-size: 5vw;
+}
+
+.albumpics {
+   margin: 0 0 0 0;
+}
+
+.imgtxt {
+   font-size:5vw;
+   font-family: century gothic;
+   margin: 0 1vw 0 1vw;
+}
+
+.imgtitle {
+   font-size:6vw;
+   font-family: century gothic;
+   margin: 18vw 1vw 0 1vw;
+}
+
+  .flip-card {
+  background-color: transparent;
+  width: 80vw;
+  height: 80vw;
+  perspective:300vw;
+  margin: 1vw 0 5vw 10vw;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+body {
+  background: linear-gradient(to bottom, #ffffff 0%, #ffcccc 100%);
+  background-size: 500% 500%;
+  background-repeat: no-repeat;
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+}
+
+
+</style>
+</head>
+
+
+
+
+<body>
+
+<div class="topnav">
+
+  <div id="logo">
+  <a class="home" href="intro.html"><img class="logo" src="logo2.jpg" /></a></div>
+
+  <a class="home links" href="home.html">Home</a>
+  <a class="about links" href="about.html">About</a>
+  <a class="songs links" href="quotes.html">Quotes</a>
+  <a class="albums links" href="albums.html">Albums</a>
+  <div class="search-container">
+    <form action="https://www.google.com/search" method="GET" target="_blank">
+    
+      <input type="text" placeholder="Search.." name="q">
+      <button type="submit" class="search"><i class="fa fa-key"></i></button>
+    
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="navbar">
+  <div class="logo"><b>LOVE YOURSELF</b></div>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()"> <i class="fa fa-heart"></i>
+  
+
+  </button>
+ </div>
+ </div>
+ <div class="dropdown-content" id="myDropdown">
+    <a href="home.html"><i class="fa fa-home"></i> Home</a>
+    <a href="about.html">about</a>
+    <a href="quotes.html">Quotes</a>
+    <a href="albums.html">albums</a>
+  </div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDropdown");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.style.display='block') {
+      myDropdown.style.display='none';
+    }
+  }
+}
+</script>
+
+
+<div>
+
+<h5 class="glow" style="color:rebeccapurple; font-family:copperplate gothic">  Albums  </h5>
+</div>
+
+<div class="albumpics">
+<div class="flip-card card1">
+<a href="her.html">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="her.png" class="fc">
+    </div>
+    <div class="flip-card-back">
+      <h1 class="imgtitle">Love Yourself: Her</h1><br> <br>
+      <p class="imgtxt">This is the first album of the Love Yourself Trilogy.</p> <br>
+      <p class="imgtxt">18 September 2017</p>
+    </div>
+  </div>
+  </a>
+</div>
+
+<div class="flip-card card2">
+<a href="answer.html">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="answer.png" class="fc">
+    </div>
+    <div class="flip-card-back">
+      <h1 class="imgtitle">Love Yourself: Answer</h1><br> <br>
+      <p class="imgtxt">This is the compilation album of the Love Yourself Trilogy.</p> <br>
+      <p class="imgtxt">24 August 2018</p>
+    </div>
+  </div>
+  </a>
+</div>
+
+<div class="flip-card card2">
+<a href="tear.html">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="tear.jpg" class="fc">
+    </div>
+    <div class="flip-card-back">
+      <h1 class="imgtitle">Love Yourself: Tear</h1> <br><br>
+      <p class="imgtxt">This is the second album of the Love Yourself Trilogy.</p> <br>
+      <p class="imgtxt">18 May 2018</p>
+    </div>
+  </div>
+  </a>
+</div>
+</div>
+<br> <br>
+
+<div>
+<p class="info" style="color:goldenrod">
+First unveiled in March of 2016, the <span style="color:#257425">BTS LOVE YOURSELF</span> series creates a narrative by linking the key songs in each album into a single theme, imparting the message that <span style="color:indigo">“loving yourself is true love”</span>. Like a well-written novel having introduction, development, twists, and conclusion it shared a compelling story for two and a half years.<br><br>
+
+<span style="color:darkviolet">Love Yourself 承 'Her'</span> is the fifth EP by BTS. The EP was released on September 18, 2017.<br><br>
+
+<span style="color:#2980b9">LOVE YOURSELF 承 'HER'</span> is an expression of the <span style="color:indigo">anxiety and elation of love, told in the unique style of BTS</span>. The “love” that BTS aims to convey in the LOVE YOURSELF series is both the individual experience of a boy growing into adulthood and <span style="color:indigo">a message of peace and unity to our society</span> today. In the mini album 承 'HER' that begins this new narrative, the image of boys in love for the first time are expressed in a refreshing and cheerful take that aims to talk about the topic of “love” while immersed in acoming-of-age tale.<br><br>
+
+<span style="color:#257425">Love Yourself: Tear</span> is the second album in the LY series and the third studio album. It came out on May 18, 2018.<br><br>
+
+BTS’ LOVE YOURSELF series bears the message that <span style="color:indigo">loving oneself is the beginning of true love</span>. Whereas the previously unveiled <span style="color:darkviolet">LOVE YOURSELF 起 ‘WONDER’</span> and <span style="color:#2980b9">LOVE YOURSELF 承 ‘HER’</span> albums expressed the heart-fluttering and tingling moments of love, <span style="color:#257425">LOVE YOURSELF 轉 ‘TEAR’</span> album embodies the pain of boys faced with parting.<br><br>
+
+<span style="color:darkviolet">Love Yourself: Answer</span> is the last album in the Love Yourself series. It is a repackage album. It came out on August 24th, 2018.<br><br>
+
+<span style="color:indigo">‘ANSWER’ is the final piece of the puzzle.</span> Thoughit’s a repackaged album, <span style="color:#2980b9">LOVE YOURSELF 結‘ANSWER’</span> still includes seven brand-new tracks. CD A is a concept album, its sixteen tracks allconnected lyrically to highlight BTS’ prowess asboth artists and storytellers.<br><br>
+<span style="color:#257425">
+All of these albums have helped ARMY realize that before they love someone else, they must love themself first. LY: Her is about finding someone you love, LY: Tear is about heartbreak, and LY: Answer is about finally loving yourself. The lyrics in every song are very meaningful and helpful to ARMY. Songs like Epiphany, Answer: Love Myself, Idol, So What, and more have helped ARMY in many ways.</span><br><br>
+</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

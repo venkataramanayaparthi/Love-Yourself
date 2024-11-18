@@ -1,0 +1,623 @@
+<html>
+<head>
+<title> About </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+
+
+* {box-sizing: border-box;}
+
+
+body {
+  background: linear-gradient(to bottom, #ffffff 0%, #99ccff 100%);
+  background-size: 100% 780%;
+  background-repeat: no-repeat;
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #99ccff;
+
+  border: 0.2vw solid #ccc;
+  height:4.5vw;
+  width:100%;
+        }
+
+
+.topnav a.links {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 1.2vw 1.2vw;
+  text-decoration: none;
+  font-size: 1.7vw;
+  position: relative;
+          }
+
+#logo .logo {
+    float:left;
+    height:4.5vw;
+    width: 6vw;
+}
+
+.topnav a:hover {
+  background-color: #ccc;
+  color: black;
+                }
+
+.topnav a.home {
+  background-color: #ccc;
+  color: black;
+  height:4.5vw;
+  width: 7vw;
+                 }
+
+.topnav a.about {
+  background-color: #ffffff;
+  color: black;
+  height:4.5vw;
+  width: 7vw;
+                 }
+
+.topnav a.songs {
+  background-color: #ccc;
+  color: black;
+  height:4.5vw;
+  width: 7vw;
+                 }
+
+.topnav a.albums {
+  background-color: #ffffff;
+  color: black;
+  height:4.5vw;
+  width:8vw;
+                 }
+
+.topnav .search-container {
+  float: right;
+  height:4vw;
+  width:23.5vw;
+                          }
+
+.topnav input[type=text] {
+  float: left;
+  padding: 0vw 0.5vw;
+  border: none;
+  margin-top: 0.5vw;
+  margin-bottom: 1.4vw;
+  margin-right: 0vw;
+  font-size: 1.7vw;
+  width:20.1vw;
+  height: 3.15vw;
+                         }
+
+.topnav .search {
+  float: right;
+  padding: 0% 1%;
+  margin-top: 2.1%;
+  margin-right: 1.5%;
+  background: #ddd;
+  font-size: 1.5vw;
+  border: none;
+  cursor: pointer;
+  width:12.89%;
+  height:79%;
+                                 }
+
+.topnav .search:hover {
+  background: #ccc;
+                                       }
+
+.navbar, .dropdown-content, .dropdown {
+    display:none;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+  .navbar {
+  display:block;
+  overflow: hidden;
+  background-color: #99ccff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16vw;
+  color: white;
+  text-align: center;
+  padding: 14vw 16vw;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+  display: block;
+}
+
+.logo {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown, .logo, .dropbtn {
+  cursor: pointer;
+  font-size: 5.5vw;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 3.5vw 4vw;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.logo {
+  padding: 6vw 0 5vw 3.5vw;
+  font-size: 6vw;
+  font-family: copperplate gothic;
+  }
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position:relative;
+  background-color: #f9f9f9;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 3vw 8vw;
+  text-decoration: none;
+  font-size: 3vw;
+  display: block;
+  text-align: center;
+  width:100%;
+  background-color: #f9f9f9;
+}
+
+.dropdown-content a:hover {
+  background-color: #ccc;
+}
+
+.topnav {
+  display:none;
+}
+
+}
+
+
+
+
+
+
+.bts {
+  width:35%;
+  src:url("hi.gif");
+  margin: 3% 0 4% 0;
+  
+}
+
+.heart1 {
+  width:20%;
+  src:url("hi.gif");
+  margin:0 5% 11% 7.5%;
+  height:20vw;
+
+}
+
+.heart2 {
+  width:20%;
+  src:url("hi.gif");
+  margin:0 5% 11% 5%;
+  height:20vw;
+
+}
+
+.info {
+    color: black;
+    font-family: century gothic;
+    margin: 1vw 1vw 1vw 1vw;
+    font-size: 1.5vw;
+}
+
+
+
+#title {
+     display: inline;
+     margin-left: auto;
+     margin-right: auto;
+     width: 3.5vw;
+     height: 4.5vw;
+                  }
+
+h1.title {
+       font-family:century gothic;
+       font-size:4.5vw;
+               }
+
+span.v {
+      color:darkviolet;
+              }
+span.i {
+      color:darkblue;
+             }
+span.b {
+      color:blue;
+               }
+span.g {
+      color:green;
+               }
+span.y {
+      color: gold;
+              }
+span.o {
+      color:orange;
+               }
+span.r {
+      color:red;
+              }
+
+img.members {
+   width:30vw;
+   height:30vw;
+
+}
+
+img.membersL {
+   width:30vw;
+   height:30vw;
+   margin:2vw 7vw 2vw 10vw;
+   float:left;
+}
+
+img.membersR {
+   width:30vw;
+   height:30vw;
+   margin:2vw 10vw 2vw 7vw;
+   float:right;
+}
+
+img.membersLjimin {
+   width:24vw;
+   height:28vw;
+   margin:2vw 7vw 2vw 13vw;
+   float:left;
+}
+
+img.membersjimin {
+   width:24vw;
+   height:28vw;
+}
+
+img.membersRV {
+   width:24vw;
+   height:28vw;
+   margin:2vw 12vw 2vw 5vw;
+   float:right;
+}
+
+img.membersV {
+   width:24vw;
+   height:28vw;
+}
+
+img.membersJK {
+   width:30vw;
+   height:30vw;
+   margin:2vw 12vw 2vw 35vw;
+}
+
+img.membersCJK {
+   width:30vw;
+   height:30vw;
+
+}
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+  
+
+.info {
+    color: black;
+    font-family: century gothic;
+    margin: 1vw 1vw 1vw 2vw;
+    font-size: 5vw;
+}
+
+
+
+body {
+  background-size: 500% 1600%;
+  background-repeat: no-repeat;
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+.bts {
+  width:100%;
+  margin: 10% 0 10% 0;
+}
+
+.heart1, .heart2 {
+  width:40vw;
+  margin:0 30% 0 30%;
+  height:30vw;
+}
+
+.titlediv {
+  width:100%;
+}
+
+#title {
+     display: inline;
+     margin-left: auto;
+     margin-right: auto;
+     width: 6vw;
+     height: 5vw;
+                  }
+
+h1.title {
+       font-family:century gothic;
+       font-size:8vw;
+               }
+
+span.v {
+      color:darkviolet;
+              }
+span.i {
+      color:darkblue;
+             }
+span.b {
+      color:blue;
+               }
+span.g {
+      color:green;
+               }
+span.y {
+      color: gold;
+              }
+span.o {
+      color:orange;
+               }
+span.r {
+      color:red;
+              }
+
+
+img.members {
+   width:100vw;
+   height:100vw;
+}
+
+img.membersjimin {
+   width:100vw;
+   height:120vw;
+   margin: 3vw 0 3vw 0;
+}
+
+img.membersV {
+   width:100vw;
+   height:125vw;
+   margin: 0 0 0 0;
+}
+
+img.membersCJK {
+   width:100vw;
+   height:100vw;
+   margin: 3vw 0 0 0;
+}
+
+
+
+
+}
+
+
+</style>
+</head>
+
+
+
+
+<body>
+
+<div class="topnav">
+
+  <div id="logo">
+  <a class="home" href="intro.html"><img class="logo" src="logo2.jpg" /></a></div>
+
+  <a class="home links" href="home.html">Home</a>
+  <a class="about links" href="about.html">About</a>
+  <a class="songs links" href="quotes.html">Quotes</a>
+  <a class="albums links" href="albums.html">Albums</a>
+  <div class="search-container">
+    <form action="https://www.google.com/search" method="GET" target="_blank">
+    
+      <input type="text" placeholder="Search.." name="q">
+      <button type="submit" class="search"><i class="fa fa-key"></i></button>
+    
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="navbar">
+  <div class="logo"><b>LOVE YOURSELF</b></div>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()"> <i class="fa fa-heart"></i>
+  
+
+  </button>
+ </div>
+ </div>
+ <div class="dropdown-content" id="myDropdown">
+    <a href="home.html"><i class="fa fa-home"></i> Home</a>
+    <a href="about.html">about</a>
+    <a href="quotes.html">Quotes</a>
+    <a href="albums.html">albums</a>
+  </div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDropdown");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.style.display='block') {
+      myDropdown.style.display='none';
+    }
+  }
+}
+</script>
+
+
+<div class="titlediv">
+<center><i>
+<h1 class="title">
+<img id="title" src="lefticon.jpg"></img>
+<u><span class="v"><u>Ban</u></span><span class="i"><u>gt</u></span><span class="b"><u>an</u></span>
+<span class="g"><u>So</u></span><span class="y"><u>ny</u></span><span class="o"><u>on</u></span><span class="r"><u>dan</u></span></u>
+<img id="title" src="1righticon.png"></img>
+</h1></i></center>
+
+</div>
+
+<img  class="heart1" src="heart.jfif">
+<img  class="bts" src="hi.gif">
+<img  class="heart2" src="heart1.jpg">
+<br><br>
+<div>
+<p class="info" style="color:goldenrod">
+<span style="color:darkviolet">BTS</span>, an acronym of <span style="color:#257425">Bangtan Sonyeondan</span> or <span style="color:#257425">Beyond the Scene</span>, is a Grammy-nominated South Korean group that has been capturing the hearts of millions of fans globally since its debut on <span style="color:indigo">13th June 2013</span>.<br><br>
+
+The members of <span style="color:darkviolet">BTS</span> are <span style="color:black">RM</span>, <span style="color:black">Jin</span>, <span style="color:black">SUGA</span>, <span style="color:black">j-hope</span>, <span style="color:black">Jimin</span>, <span style="color:black">V</span>, and <span style="color:black">Jung Kook</span>. Gaining recognition for their authentic and self-produced music, top-notch performances, and the way they interact with their fans, <span style="color:darkviolet">BTS</span> has established themselves as <span style="color:#257425">“21st century Pop Icons”</span> breaking countless world records.<br><br>
+
+While imparting a positive influence through activities such as the <span style="color:#2980b9">LOVE MYSELF campaign</span> and the <span style="color:#2980b9">UN ‘Speak Yourself’ speech</span>, the band has mobilized millions of fans across the world (named <span style="color:darkviolet">ARMY</span>), topped the <span style="color:indigo">Billboard Hot 100 chart</span> <span style="color:#257425">4 times</span> in 2020 and <span style="color:#257425">5 times</span> in 2021, performed <span style="color:#257425">multiple sold-out stadium shows</span> across the world, and been named <span style="color:indigo">TIME’s Entertainer of the Year 2020</span>.<br><br>
+
+<span style="color:darkviolet">BTS</span> has been nominated for <span style="color:#2980b9">Best Pop Duo/Group Performance</span> for the <span style="color:indigo">63rd Grammy Awards</span> and recognized with numerous prestigious awards like the <span style="color:indigo">Billboard Music Awards</span>, <span style="color:#257425">American Music Awards</span> and <span style="color:#2980b9">MTV Video Music Awards</span>.<br><br>
+</p>
+
+<center>
+<div>
+<img class="members" src="jin2.jpg"></div>
+<h1 class="info">JIN</h1>
+<p class="info">Kim Seok-jin (김석진), better known by his stage name Jin (진), is a South Korean singer-songwriter under Big Hit Music. He is a vocalist and a visual in BTS.<br><br>
+
+As a solo artist, he has released two self-produced songs: "Tonight" in 2019 and "Abyss" in 2020.<br><br></p>
+</div>
+<center>
+<div>
+<img class="members" src="suga.jpg">
+<h1 class="info">SUGA</h1>
+<p class="info">Min Yoon-gi (민윤기), better known by his stage names SUGA (슈가) and Agust D is a South Korean rapper-songwriter and record producer under Big Hit Music. He is a rapper of BTS, also he is notable for his large input in songwriting and is the major music producer between the members.<br><br>
+
+As a solo artist, he has released two mixtapes: Agust D in 2016 and D-2 in 2020. In 2018, Suga was promoted to full member of the Korea Music Copyright Association.<br><br></p>
+</div>
+<center>
+<div>
+<img class="members" src="hobi1.jpg">
+<h1 class="info">J-HOPE</h1>
+<p class="info">Jung Ho-seok (정호석), better known by his stage name j-hope (제이홉), is a South Korean rapper-songwriter and record producer under Big Hit Music. He is a rapper and a dancer of BTS, also he is notable for his large input in songwriting and production in the discography in the group.<br><br>
+
+As a solo artist, he has released first mixtape Hope World in 2018. In 2020, j-hope was promoted to full member of the Korea Music Copyright Association.<br><br></p>
+</div>
+<center>
+<div>
+<img class="members" src="rm.jpg">
+<h1 class="info">RM</h1>
+<p class="info">Kim Nam-joon (김남준), better known by his stage name RM (short for Real Me) (formerly known as Rap Monster (랩몬스터) and Runch Randa), is a South Korean rapper-songwriter and record producer under Big Hit Music. He is the leader and a rapper of BTS, also he is notable for his large input in songwriting and production in the discography in the group.<br><br>
+
+As a solo artist, he has released two mixtapes: RM in 2015 and Mono in 2018. In 2020, RM was promoted to full member of the Korea Music Copyright Association.<br><br></p>
+</div>
+<center>
+<div>
+<img class="membersjimin" src="jimin2.jpg">
+<h1 class="info">JIMIN</h1>
+<p class="info">Park Ji-min (박지민), better known by his stage name Jimin (지민), is a South Korean singer-songwriter and record producer under Big Hit Music. He is a vocalist and a dancer of BTS.<br><br>
+
+As a solo artist, he has released two self-produced songs: "Promise" in 2018 and "Christmas Love" in 2020.<br><br></p>
+</div>
+<center>
+<div>
+<img class="membersV" src="v.jpg">
+<h1 class="info">V</h1>
+<p class="info">Kim Tae-hyung (김태형), better known by his stage name V (뷔), is a South Korean singer-songwriter, record producer and actor under Big Hit Music. He is a vocalist, a dancer and a visual of BTS.<br><br>
+
+As a solo artist, he has released three self-produced songs: "Scenery", "Winter Bear" and "Sweet Night". He made his acting debut on 2016 with the drama Hwarang: The Poet Warrior Youth.<br><br></p>
+</div>
+<center>
+<div>
+<img class="membersCJK" src="jk.jpg">
+<h1 class="info">JUNGKOOK</h1>
+<p class="info">Jeon Jeong-guk (전정국), better known by his stage name Jung Kook (정국), is a South Korean singer-songwriter and record producer under Big Hit Music. He is a vocalist, the center, a dancer, a visual and the maknae of BTS.<br><br>
+
+As a solo artist, he has released first self-produced song "Still With You" in 2020.<br><br></p>
+</div>
+<center>
+<div>
+<img class="membersCJK" src="army.jpg">
+<h1 class="info">ARMY</h1>
+<p class="info">ARMY or A.R.M.Y (Hangul: 아미) is BTS's official fandom name. It was officially established on July 9, 2013.<br><br>
+
+"A.R.M.Y" stands for "Adorable Representative M.C. for Youth" and it carries quite some meaning behind it, given that "Army" is associated with the military, body armor, and how those two things are always together, the fandom name basically means that fans will always be together with BTS.<br><br>
+
+BTS and A.R.M.Y are almost mirrored mages of each other and they have a relationship that is affected by each other. The symbol of A.R.M.Y is expressed as a door on their viewpoint who is waiting & welcoming BTS on the opposite door when BTS opens a new door.<br><br></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

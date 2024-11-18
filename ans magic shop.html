@@ -1,0 +1,722 @@
+<html>
+<head>
+<title> Magic Shop </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<style>
+
+
+* {box-sizing: border-box;}
+
+body {
+  background: linear-gradient(to top right, #ffe6cc 0% , #ffe6e6 20%, #ffcce6 40%,  #e6ccff 70%, #b3d9ff 100%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+.glow {
+  font-size: 60px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+  height:0px;
+  padding:0px;
+  line-height:0px;
+  display:block;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e6ccff, 0 0 40px #e6ccff, 0 0 50px #e6ccff, 0 0 60px #e6ccff, 0 0 70px #e6ccff;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #4dd2ff, 0 0 40px #eeccff, 0 0 50px #eeccff, 0 0 60px #eeccff, 0 0 70px #eeccff, 0 0 80px #eeccff;
+  }
+}
+
+
+
+* {box-sizing: border-box;}
+
+#logo .logo {
+    float:left;
+    height:4.5vw;
+    width: 6vw;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: linear-gradient(to top, #ffe6cc 0% , #ffe6e6 20%, #ffcce6 40%,  #e6ccff 70%, #b3d9ff 100%);
+  border: 0.2vw solid #ccc;
+  height:4.5vw;
+  width:100%;
+        }
+
+
+.topnav a.links {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 1.2vw 1.2vw;
+  text-decoration: none;
+  font-size: 1.7vw;
+  border-top: 0.2vw solid linear-gradient(to top right, #ffe6cc 0% , #ffe6e6 20%, #ffcce6 40%,  #e6ccff 70%, #b3d9ff 100%);
+  border-bottom: 0.2vw solid linear-gradient(to top right, #ffe6cc 0% , #ffe6e6 20%, #ffcce6 40%,  #e6ccff 70%, #b3d9ff 100%);
+  border-left: 0.1vw solid linear-gradient(to top right, #ffe6cc 0% , #ffe6e6 20%, #ffcce6 40%,  #e6ccff 70%, #b3d9ff 100%);
+  border-right: 0.1vw solid linear-gradient(to top right, #ffe6cc 0% , #ffe6e6 20%, #ffcce6 40%,  #e6ccff 70%, #b3d9ff 100%);
+          }
+
+
+.topnav a:hover {
+  background-color: #ccc;
+  color: black;
+                }
+
+
+.topnav a.home {
+  background-color: #ccc;
+  color: black;
+  height:4.5vw;
+  width: 7vw;
+                 }
+
+.topnav a.about {
+  background-color: #ffffff;
+  color: black;
+  height:4.5vw;
+  width: 7vw;
+                 }
+
+.topnav a.songs {
+  background-color: #ccc;
+  color: black;
+  height:4.5vw;
+  width: 7vw;
+                 }
+
+.topnav a.albums {
+  background-color: #ffffff;
+  color: black;
+  height:4.5vw;
+  width: 8vw;
+                 }
+
+.topnav .search-container {
+  float: right;
+  height:4vw;
+  width:23.5vw;
+                          }
+
+.topnav input[type=text] {
+  float: left;
+  padding: 0vw 0.5vw;
+  border: none;
+  margin-top: 0.5vw;
+  margin-bottom: 1.4vw;
+  margin-right: 0vw;
+  font-size: 1.7vw;
+  width:20.1vw;
+  height:3.15vw;
+                         }
+
+.topnav .search {
+  float: right;
+  padding: 0% 1%;
+  margin-top: 2.1%;
+  margin-right: 1.5%;
+  background: #ddd;
+  font-size: 1.5vw;
+  border: none;
+  cursor: pointer;
+  width:12.89%;
+  height:79%;
+                                 }
+
+.topnav .search:hover {
+  background: #ccc;
+                                       }
+
+
+ .main {
+  margin-right:1vw;
+  height:38.1vw;
+  width:35vw;
+  float:right;
+  }
+
+
+
+.content {
+    width: 50%;
+    margin: 2vw 0 0 1vw;
+    padding: 3vw;
+    overflow: hidden;
+    display:block;
+    float:left;
+}
+
+
+.info, table {
+  width:100%;
+  display:block;
+  font-size: 1.3vw;
+  line-height:2.5vw;
+  margin-left: 1vw;
+  color:#ff9900;
+}
+
+th {
+ text-align:left;
+ width:60%;
+}
+
+td {
+ height:3vw;
+ text-align:top;
+}
+
+.content1 {
+    width: 40%;
+    margin: 0 2vw 2.5vw 0.2vw;
+    overflow:hidden;
+    padding:3vw;
+    display:block;
+    float:right;
+}
+
+.video {
+    background-color:black;
+    width:55vw;
+    height:38vw;
+    frameborder:2;
+    float: left;
+    margin: 0 0 0 1%;
+}
+
+
+.stickers {
+  width:100%;
+  float:left;
+}
+
+
+.sticker3 {
+  display:inline-block;  
+  float:left;
+  margin: 7% 0px 0px 15%;
+  height:20.3vw;
+
+  align:right;
+  width:22vw;
+}
+
+.sticker4 {
+  display:inline-block;  
+  float:right;
+  margin: 7% 15% 0px 0px;
+  height:20.3vw;
+
+  align:right;
+  width:22vw;
+}
+
+h4 {
+    color: black;
+    font-family: century gothic;
+}
+
+.navbar, .dropdown-content {
+    display:none;
+}
+
+.lyrics {
+    color: #ff9900;
+    font-size: 2vw;
+    overflow-Y: scroll;
+    margin: 5% 1% 0 0;
+    width:40vw;
+    height:25vw;
+    float: right;
+    padding: 0 0.5% 0 0;
+}
+
+.change {
+  float:right;
+  margin: 0 3vw 1vw 0;
+  width: 8vw;
+  height: 3vw;
+  font-size: 1vw;
+  background-color: purple;
+  color: white;
+  border-radius: 1vw;
+  border: 0.1vw solid darkgray;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .navbar {
+  display:block;
+  overflow: hidden;
+  background-color: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+  display:block;
+}
+
+.logo {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown, .logo, .dropbtn {
+  cursor: pointer;
+  font-size: 5.5vw;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 3.5vw 4vw;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.logo {
+  padding: 6vw 0 5vw 3.5vw;
+  font-size: 6vw;
+  font-family: copperplate gothic;
+  }
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position:relative ;
+  background-color: #f9f9f9;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 3vw 8vw;
+  font-size: 3vw;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  width:100%;
+  background-color: #f9f9f9;
+}
+
+.dropdown-content a:hover {
+  background-color: #ccc;
+}
+
+.topnav {
+  display:none;
+}
+
+ .sticker3 {
+  display:inline-block;  
+  float:left;
+  margin: 4% 1% 0 10%;
+  height:31vw;
+  align:right;
+  width:30vw;
+}
+
+.sticker4 {
+  display:inline-block;  
+  float:right;
+  margin: 4% 10% 0 1%;
+  height:31vw;
+  align:right;
+  width:30vw;
+}
+
+.lyrics {
+    color: #ff9900;
+    font-size: 6vw;
+    overflow-Y: scroll;
+    margin: 1vw 1vw 1vw 1vw;
+    width:90vw;
+    height:64vw;
+    float:none;
+}
+
+.songname {
+  margin:20px 20px 20px 20px;
+  font-size:7vw;
+}
+
+.video {
+    background-color:black;
+    width:90vw;
+    height:57.6vw;
+    frameborder:2;
+    float: none;
+}
+
+.content {
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 0;
+    overflow: hidden;
+    display:block;
+    float:none;
+}
+
+.info, table {
+  width:100%;
+  display:block;
+  font-size: 4vw;
+  line-height:150%;
+  margin:0 1% 0 1%;
+  color:#ff9900;
+}
+
+th {
+ text-align:left;
+ width:70%;
+}
+
+td {
+ height:5%;
+}
+
+.content1 {
+    width: 100%;
+    margin:0;
+    overflow:hidden;
+    padding:0;
+    display:block;
+    float:right;
+}
+
+
+ .main {
+  height:100vw;
+  margin:0;
+  padding: 3% 3% 3% 3%;
+  width:100%;
+  float:none;
+  }
+
+}
+
+</style>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+
+<div class="topnav">
+
+  <div id="logo">
+  <a class="home" href="intro.html"><img class="logo" src="logo2.jpg" /></a></div>
+
+  <a class="home links" href="home.html">Home</a>
+  <a class="about links" href="about.html">About</a>
+  <a class="songs links" href="quotes.html">Quotes</a>
+  <a class="albums links" href="albums.html">Albums</a>
+  <div class="search-container">
+    <form action="https://www.google.com/search" method="GET" target="_blank">
+    
+      <input type="text" placeholder="Search.." name="q">
+      <button type="submit" class="search"><i class="fa fa-key"></i></button>
+    
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="navbar">
+  <div class="logo"><b>LOVE YOURSELF</b></div>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()"> <i class="fa fa-heart"></i>
+  
+
+  </button>
+ </div>
+ </div>
+ <div class="dropdown-content" id="myDropdown">
+    <a href="home.html"><i class="fa fa-home"></i> Home</a>
+    <a href="about.html">about</a>
+    <a href="quotes.html">Quotes</a>
+    <a href="albums.html">albums</a>
+  </div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDropdown");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.style.display='block') {
+      myDropdown.style.display='none';
+    }
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<div>
+<h3 class="glow songname"> MAGIC SHOP - Audio </h3>
+</div><br><br>
+<center>
+<div>
+<iframe class="video" title="vimeo-player" src="https://player.vimeo.com/video/495137947" allowfullscreen></iframe></div>
+<br>
+<div class="lyrics" border="2">
+
+<h4> Translation </h4>
+<p class="trans">
+I know you hesitate,<br>
+because even when speaking the truth<br>
+It all comes back as scars<br>
+I won’t tell you something cliche like, “be strong”<br>
+I’ll just tell you, tell you my story<br><br>
+ 
+What did I tell you?<br>
+That we’d win, right?<br>
+I couldn’t believe it (really)<br>
+Will we really be able to win?<br>
+This miracle that isn’t a miracle,<br>
+did we make it?<br>
+(No) I was just here<br>
+You were the one that made your way to me<br>
+I do believe in your galaxy<br>
+I want to hear your melody<br>
+Your stars in the galaxy<br>
+How you can plant your sky<br>
+Don’t forget that I found you anyways<br>
+at the end of my despair<br>
+You’re the last reason<br>
+For me who was standing at the edge of the cliff<br>
+Live<br><br>
+ 
+On days when you hate being yourself,<br>
+on days when you just want to disappear forever<br>
+Let’s make a door inside your heart<br>
+If you open that door and go inside,<br>
+this place will be waiting for you<br>
+It’s alright to believe, it’ll comfort you, this Magic Shop<br><br>
+ 
+Have a cup of warm tea<br>
+And look up at that galaxy<br>
+You’ll be alright, oh, here is Magic Shop.<br><br>
+ 
+So show me (I'll show you)<br>
+So show me (I'll show you)<br>
+So show me (I'll show you)<br>
+Show you, show you<br><br>
+ 
+When blooming, to be like a rose<br>
+When blowing in the winds, to be like cherry blossoms<br>
+When fading, to be like morning glory<br>
+Like those beautiful moments<br>
+I always wanted to be the best<br>
+So I was always impatient and anxious<br>
+Comparing myself to others became my daily life<br>
+My greed that was my weapon suffocated me and also became a prison<br><br>
+ 
+But looking back on it now, truthfully,<br>
+I don’t think being the best was what I wanted<br>
+I wanted to be someone’s comfort, I wanted to touch someone’s heart<br>
+I want to take away your sadness, your pain<br><br>
+ 
+On days when you hate being yourself,<br>
+on days when you just want to disappear forever<br>
+Let’s make a door inside your heart<br>
+If you open that door and go inside, this place will be waiting for you<br>
+It’s alright to believe, it’ll comfort you, this Magic Shop<br><br>
+ 
+Have a cup of warm tea<br>
+And look up at that galaxy<br>
+You’ll be alright, oh, here is Magic Shop.<br><br>
+ 
+So show me (I'll show you)<br>
+So show me (I'll show you)<br>
+So show me (I'll show you)<br>
+Show you, show you<br><br>
+ 
+Would you believe me if I said that I was afraid of everything too?<br>
+All the sincerity, the remaining times<br>
+All your answers are in this place you found<br>
+In your galaxy, inside your heart<br><br>
+ 
+You gave me the best of me<br>
+So you’ll give you the best of you<br>
+You found me, you understood me<br>
+You gave me the best of me<br>
+So you’ll give you the best of you<br>
+So I’ll find you, the galaxy that’s inside of you<br><br>
+ 
+So show me (I'll show you)<br>
+So show me (I'll show you)<br>
+So show me (I'll show you)<br>
+Show you, show you<br><br>
+</p>
+</center>
+
+</div>
+
+<br></div>
+
+<div class="stickers">
+ <img class="sticker3" src="sticker3.jpg">
+ <img class="sticker4" src="sticker4.jpg">
+</div>
+
+
+
+<div class="content">
+<br><br>
+<b><p class="info"> Music in this video</p></b>
+<br>
+<table>
+<tr>
+<td><i>Song</td>
+<th><i>Magic Shop</th></tr>
+<tr>
+<td><i>Artist</td>
+<th><i>BTS</th></tr>
+<tr>
+<td><i>Album</td>
+<th><i>Love Yourself: Answer</th></tr>
+<tr>
+<td><i>Licensed to YouTube by</td>
+<th><i>HYBE Co., Ltd. (on behalf of BigHit Entertainment); ASCAP, LatinAutor,
+    UNIAO BRASILEIRA DE EDITORAS DE MUSICA - UBEM, LatinAutorPerf,
+    CMRRA, LatinAutor - PeerMusic, BMI - Broadcast Music Inc., LatinAutor -
+    SonyATV, Kobalt Music Publishing, Sony ATV Publishing, Peermusic,
+    AMRA, and 15 Music Rights Societies</th></tr>
+</table>
+</div>
+<div class="content1">
+<br><br>
+<img class="main" src="magicshop.jpg">
+</div>
+
+
+
+<br><br><br>
+
+<a href="ans best of me.html"><button class="change"> Next <i class="fa fa-arrow-right" aria-hidden="true"></i></button></a>
+
+<br><br><br>
+
+
+<br><br><br>
+
+<a href="answer love myself.html"><button class="change"><i class="fa fa-arrow-left" aria-hidden="true"></i> Previous </button></a>
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

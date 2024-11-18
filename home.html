@@ -1,0 +1,1022 @@
+<html>
+<head>
+<title> Home </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+function halfVolume() {
+    var myAudio = document.getElementById("audio");  
+    myAudio.volume = 0.3;
+}
+</script>
+
+<style>
+
+* {box-sizing: border-box;}
+
+body {
+  background: url('bg.jpg') center;
+  background-size: cover;
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+.parallax {
+  background:center;
+  background-repeat:no-repeat;
+  background-size: 100% 117%;
+  background-attachment: fixed;
+  height:54vw;
+  max-width:100vw;
+}
+
+#b {
+  background-image: url('the magic shop.jpg');
+  background-size: cover;
+  height:54vw;
+}
+
+#c {
+  background-image: url('galaxy.jpg');
+  height:64vw;
+}
+
+#d {
+  background-image: url('bts2.jpeg');
+  background-size: 100%;
+}
+
+#e {
+  background-image: url('tinytan1.gif');
+  height: 101%;
+}
+
+#f {
+  background-image: url('ttti.jpg');
+}
+
+#a {
+  background-image: url('logobg2.jfif');
+}
+
+.container {
+  width:90vw;
+  height:60vw;
+  position: relative;
+  background: url('bg.jpg') center;
+  background-size: cover;
+  font-size: 2vw;
+  background: #f9f9f9;
+  margin:1vw 5vw 5vw 5vw;
+  
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-image: url('navbg.jpg');
+  background-size: cover;
+  border: 0.2vw solid #ccc;
+  height:4.5vw;
+  width:90vw;
+        }
+
+
+.topnav a.links {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 1.2vw 1.2vw;
+  text-decoration: none;
+  font-size: 1.7vw;
+  position: relative;
+          }
+
+#logo .logo {
+    float:left;
+    height:4.5vw;
+    width: 6vw;
+}
+
+.topnav a:hover {
+  background-color: #ccc;
+  color: black;
+                }
+
+.topnav a.home {
+  background-color: #ccc;
+  color: black;
+  height:4.5vw;
+  width: 7vw;
+                 }
+
+.topnav a.about {
+  background-color: #ffffff;
+  color: black;
+  height:4.5vw;
+  width: 7vw;
+                 }
+
+.topnav a.songs {
+  background-color: #ccc;
+  color: black;
+  height:4.5vw;
+  width: 7vw;
+                 }
+
+.topnav a.albums {
+  background-color: #ffffff;
+  color: black;
+  height:4.5vw;
+  width:8vw;
+                 }
+
+.topnav .search-container {
+  float: right;
+  height:4vw;
+  width:23.5vw;
+                          }
+
+.topnav input[type=text] {
+  float: left;
+  padding: 0vw 0.5vw;
+  border: none;
+  margin-top: 0.5vw;
+  margin-bottom: 1.4vw;
+  margin-right: 0vw;
+  font-size: 1.7vw;
+  width:20.1vw;
+  height: 3.15vw;
+                         }
+
+.topnav .search {
+  float: right;
+  padding: 0% 1%;
+  margin-top: 2%;
+  margin-right: 1.5%;
+  background: #ddd;
+  font-size: 85%;
+  border: none;
+  cursor: pointer;
+  width:12.9%;
+  height:80.1%;
+                                 }
+
+.topnav .search:hover {
+  background: #ccc;
+                                       }
+
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav, {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 0vw 0vw 0vw 0vw;
+   }
+
+.topnav input[type=text] {
+    float: left;
+    display: block;
+    text-align: left;
+    width: 20.1vw;
+    margin: 0.5vw 0vw 0 0;
+    padding: 0vw 0.5vw;
+
+}
+
+.search {
+  float: right;
+  padding: 0vw 1vw;
+  margin-top: 0.5vw;
+  margin-right: 5vw;
+  background: #ccc;
+  border: none;
+  cursor: pointer;
+  width:1vw;
+  height:80.1vw;
+}
+}
+
+
+
+
+
+h1 {
+  text-align: center;
+  font-family: segoe print;
+}
+
+p {
+  padding:0.3%;
+}
+
+.inPar {
+  height: 1vw;
+  color: white;
+  padding:23vw 0vw 0vw 0vw;
+}
+
+.welcome {
+  margin: 3% 2% 4% 0%;
+  font-size: 135%;
+  font-family: segoe script;
+  text-align: center;
+}
+
+.welcome1 {
+  margin: 3% 2% 4% 6%;
+  font-size: 135%;
+  font-family: segoe script;
+  text-align: left;
+}
+
+.title {
+  margin: 5.5% 2% 4% 0%;
+  font-size: 130%;
+  font-family: segoe script;
+  text-align:center;
+}
+
+.moods {
+  margin: auto;
+  font-size: 135%;
+  font-family: segoe script;
+  text-align: center;
+}
+
+#l1 {
+  color:#660066;
+}
+#l2 {
+  color:#000066;
+}
+#l3 {
+  color:003300;
+}
+#l4 {
+  color:#993366;
+}
+#l5 {
+  color:#663300;
+}
+#l6 {
+  color:#993366;
+}
+#l7 {
+  color:#003300;
+}
+#l8 {
+  color:#000066;
+}
+#l9 {
+  color:#660066;
+}
+
+.members {
+  margin: 3% 2% 0% 4%;
+  font-size: 132%;
+  font-family: segoe script;
+  text-align: left;
+}
+
+#m1 {
+  color:#660066;
+  text-align:center;
+  font-family:segoe print;
+}
+#m2 {
+  color:#000066;
+}
+#m3 {
+  color:003300;
+}
+#m4 {
+  color:#993366;
+  text-align:center;
+  font-family:segoe print;
+}
+#m5 {
+  color:#663300;
+  text-align:center;
+  font-family:segoe print;
+}
+#m6 {
+  color:#003300;
+  text-align:center;
+  font-family:segoe print;
+}
+#m7 {
+  color:#000066;
+  text-align:center;
+  font-family:segoe print;
+}
+#m8 {
+  color:#663300;
+  text-align:center;
+  font-family:segoe print;
+}
+#m9 {
+  color:#660066;
+  text-align:center;
+  font-family:segoe print;
+}
+
+#m10 {
+  color:#003300;
+  text-align:center;
+  font-family:segoe print;
+}
+
+#m11 {
+  color:#000066;
+  font-size: 120%;
+}
+
+.button {
+  height:5vw;
+  font-family:segoe print;
+  font-size: 90%;
+  border: 0.15vw solid purple;
+  padding:0.4%;
+  background-color:#ddd;
+  width: 22.5%;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+h5:hover {
+  cursor: pointer;
+}
+
+
+.video, .info{
+  background-color: #ccc;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 18px;
+}
+
+.close, .close1, .close2{
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus,
+.close1:hover,
+.close1:focus,
+.close2:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#eatvideo, #purple, #secret {
+  display: none;
+  position: fixed;
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4); 
+}
+
+ul {
+  list-style-type:none;
+  padding:0.4%;
+}
+
+li {
+  padding:0.8%;
+}
+
+.buttonmoods {
+  height:5vw;
+  font-family:segoe print;
+  font-size: 180%;
+  border: 0.15vw solid purple;
+  padding:0%;
+  background-color:#ddd;
+  width: 56%;
+  margin:auto;
+}
+.buttonmoods:hover {
+  cursor: pointer;
+}
+
+table {
+  width: 80%;
+  margin:auto;
+  height: 30%;
+}
+
+td {
+  padding:2%;
+  height:1%;
+  width:35%;
+  text-align:center;
+  font-size: 1.1vw;
+  margin:auto;
+}
+
+#a1 {
+  color:#000066;
+  text-align:center;
+  font-family:segoe print;
+  line-height:1%;
+}
+
+#a2 {
+  color:#000066;
+  text-align:center;
+  font-family:segoe print;
+  line-height:250%;
+}
+
+.glow {
+  font-size: 120%;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+  height:0%;
+  padding:0%;
+  line-height:0%;
+  display:block;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e6ccff, 0 0 40px #e6ccff, 0 0 50px #e6ccff, 0 0 60px #e6ccff, 0 0 70px #e6ccff;
+  }
+  
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e6ccff, 0 0 40px #e6ccff, 0 0 50px #e6ccff, 0 0 60px #e6ccff, 0 0 70px #e6ccff;
+  }
+  
+}
+
+footer {
+    background-color: #999;
+    font-size: 1.2vw;
+}
+
+.footerText {
+    font-family: Open Sans;
+    font-size: 1.08vw;
+    color: rgba(29,29,29,.6);
+    margin: 0vw 10vw 1vw 10vw;
+    line-height: 2.1vw;
+}
+
+.tnc {
+    font-family: brandon-grotesque;
+    font-size: 0.9vw;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    letter-spacing:0.1vw;
+    text-align: left;
+}
+
+.navbar, .dropdown-content {
+    display:none;
+}
+
+iframe {
+    width: 65vw;
+    height: 50vw;
+       }
+
+@media screen and (max-width: 1024px) {
+    .parallax {
+       height: 100%;
+              }
+
+    #b, #a {
+       height: 200%;
+           }
+    #e {
+       height: 260%;
+       background-image: url('tinytan2.gif');
+       background-size: 120% 100%;
+       }
+    #f {
+       height:240%;
+       background-image: url('bt21.jpg');
+       background-size: 100% 100%;
+       }
+    #c {
+       height: 280%;
+       }
+    #d {
+       height: 250%;
+       background-image: url('BTS.jpg');
+       }
+    .inpar {
+       padding: 60% 0 0 0;
+           }
+
+
+footer {
+    background-color: #999;
+    font-size: 2vw;
+       }
+
+.footerText {
+    font-family: Open Sans;
+    font-size: 2vw;
+    color: rgba(29,29,29,.6);
+    margin: 0vw 10vw 1vw 10vw;
+    line-height: 2.7vw;
+            }
+
+.tnc {
+    font-family: brandon-grotesque;
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    letter-spacing:0.1vw;
+    text-align: left;
+     }
+iframe {
+    width: 65vw;
+    height: 50vw;
+       }
+
+
+ .navbar {
+  display:block;
+  overflow: hidden;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+  display: block;
+}
+
+.logo {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown, .logo, .dropbtn {
+  cursor: pointer;
+  font-size: 5.5vw;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 3.5vw 4vw;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.logo {
+  padding: 6vw 0 5vw 3.5vw;
+  font-size: 6vw;
+  font-family: copperplate gothic;
+  }
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position:relative ;
+  background-color: #f9f9f9;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 3vw 8vw;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  width:100%;
+  background-color: #f9f9f9;
+}
+
+.dropdown-content a:hover {
+  background-color: #ccc;
+}
+
+.topnav {
+  display:none;
+}
+body {
+  font-size: 6vw;
+}
+.txtbx {
+  width:3vw;
+  height:3vw;
+}
+#wk {
+  width:30vw;
+  height:30vw;
+}
+
+}
+
+.txtbx {
+  width:4.5vw;
+  height:100%;
+}
+
+
+</style>
+
+
+
+
+</head>
+
+
+
+<body>
+
+
+<div class="container">
+
+
+<div class="topnav">
+
+  
+   <div id="logo">
+  <a class="logo" href="intro.html"><img class="logo" src="logo2.jpg" /></a></div>
+  <a class="home links" href="home.html">Home</a>
+  <a class="about links" href="about.html">About</a>
+  <a class="songs links" href="quotes.html">Quotes</a>
+  <a class="albums links" href="albums.html">Albums</a>
+  <div class="search-container">
+    <form action="https://www.google.com/search" method="GET" target="_blank">
+    
+      <input type="text" placeholder="Search.." name="q">
+      <button type="submit" class="search"><i class="fa fa-key"></i></button>
+    
+    </form>
+  </div>
+</div>
+
+
+
+
+
+<div class="navbar">
+  <div class="logo"><b>LOVE YOURSELF</b></div>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()"> <i class="fa fa-heart"></i>
+  
+
+  </button>
+ </div>
+ </div>
+ <div class="dropdown-content" id="myDropdown">
+    <a href="home.html"><i class="fa fa-home"></i> Home</a>
+    <a href="about.html">about</a>
+    <a href="quotes.html">Quotes</a>
+    <a href="albums.html">albums</a>
+  </div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDropdown");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.style.display='block') {
+      myDropdown.style.display='none';
+    }
+  }
+}
+</script>
+
+
+
+
+
+
+<audio id="audio" autoplay loop onloadeddata="halfVolume()">
+  <source src="moonbgm.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+
+
+<div class="parallax" id= "b">
+<h1 class="inPar">Welcome to your Magic Shop</h1>
+</div>
+<br><br>
+<p class="welcome" id="l1">
+The Magic Shop will be your guidance.<br></p>
+<p class="welcome" id="l2">
+But first I'll need your keys.<br></p>
+<p class="welcome" id="l3">
+Concentrate on opening the door to the magic shop.<br></p>
+<p class="welcome" id="l4">
+Keep calm and relax.<br></p>
+
+<div class="parallax" id="c">
+</div>
+
+<p class="welcome" id="l5">
+Take a deep breathe.<br></p>
+<p class="welcome" id="l6">
+Empty your Minds and Focus.<br></p>
+<p class="welcome" id="l7">
+Imagine a door leading to your heart.<br></p>
+<p class="welcome" id="l8">
+what you want the most stands behind that door.<br></p>
+<p class="welcome" id="l9">
+Just Believe. And your magic shop will come true.<br>
+</p>
+
+<div class="parallax" id="d">
+</div>
+
+<p class="welcome">
+
+<p class="members" id="m1">
+<b>This is BTS.</b><br></p>
+<p class="welcome1" id="m2">
+They will be your mentors at this Magic Shop.<br></p>
+<p class="welcome1" id="m3">
+The members are:<br></p>
+<p class="members" id="m4">
+RM- Kim Namjoon<br></p>
+<p class="members" id="m5">
+Jin- Kim Seokjin<br></p>
+<p class="members" id="m6">
+Suga- Min Yoongi<br></p>
+<p class="members" id="m7">
+J-Hope- Jung Hoseok<br></p>
+<p class="members" id="m8">
+Jimin- Park Jimin<br></p>
+<p class="members" id="m9">
+V- Kim Taehyung<br></p>
+<p class="members" id="m10">
+Jungkook- Jeon Jungkook<br><br></p>
+<p class="welcome1" id="m11">
+Want to read more about them?
+<a href="about.html"><button class="button"> Yes </button></a>
+<a href="#e"><button class="button"> No, Thank you </button></a>
+</p>
+</p>
+
+<div class="parallax" id="e">
+</div>
+
+<p class="welcome1" id="l1">
+Please get into your most comfortable position possible.
+</p>
+<p class="welcome1" id="l2">
+Don't forget to bring your comfort food and beverages.
+</p>
+<p class="welcome1" id="l3">
+pst... You can eat together with V if you don't want to eat alone...</p>
+<center>
+<button class="button" id="eatwithv"> I want to eat with V </button>
+
+<div id="eatvideo">
+<div class="video" style="background-color:#fff">
+<span class="close1">&times;</span>
+<iframe width="1120" height="630" src="https://www.youtube.com/embed/CI8SyOc_kX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="vid">
+</iframe>
+</div>
+</div>
+<br><br><br>
+
+
+<script>
+var modal1 = document.getElementById("eatvideo");
+var btn1 = document.getElementById("eatwithv");
+var span1 = document.getElementsByClassName("close1")[0];
+
+btn1.onclick = function() {
+modal1.style.display = "block";
+}
+span1.onclick = function() {
+modal1.style.display = "none";
+var iframe = document.getElementById("vid"); iframe.src = iframe.src;
+}
+window.onclick = function(event) {
+if (event.target == modal1) {
+modal1.style.display = "none";
+var iframe = document.getElementById("vid"); iframe.src = iframe.src;
+}
+}
+document.onkeydown = function(evt) {
+evt = evt || window.event;
+if (evt.keyCode == 27) {
+modal1.style.display = "none";
+var iframe = document.getElementById("vid"); iframe.src = iframe.src;
+}
+}
+
+</script>
+
+
+<div class="parallax" id="f">
+</div>
+
+<p class="title" id="a1">
+How are you feeling right now?</p>
+<table>
+<tr>
+<td><a href="laugh.html"><button class="buttonmoods"> I want to laugh </button></a></td>
+<td><a href="cry.html"><button class="buttonmoods"> I want to cry </button></a></td>
+</tr>
+<tr>
+<td><button class="buttonmoods" id="talk"> I want to Talk </button></td>
+<td><a href="dance.html"><button class="buttonmoods"> I want to dance </button></a></td>
+</tr>
+<tr>
+<td><a href="study.html"><button class="buttonmoods"> I want to study </button></a></td>
+<td><a href="sleep.html"><button class="buttonmoods"> I want to sleep </button></a></td>
+</tr>
+</table>
+<br>
+
+
+<div id="secret">
+    <div class="info" style="background-color:#fff">
+    <span class="close2">&times;</span>
+    <h1 style="font-size:3vw; color:black;text-align:center"> Your Fidus Achates </h1>
+<div id="textbox">
+<p style="color:navy; font-size:1.5vw; font-family:century gothic; text-align:center"> Any worries you'd like to share??<br>
+Any secrets you'd like to keep away???<br><br>
+We promise to seal it and throw it away in the deep oceans.
+</p>
+<p class="textbox" style="color:black; font-size:2vw; font-family:century gothic">
+<textarea placeholder="You can vent here.." style="height:20vw; width:55vw; font-size:2vw"></textarea><br><br>
+<button onclick="document.getElementById('textbox').style.display = 'none'; document.getElementById('key').style.display = 'block';" style="width:5.5vw; height:4vw; cursor:pointer"><img class="txtbx" src="treasure.png"></button>
+    </p>
+</div>
+<p id="key" style="color:black; font-size:2vw; font-family:century gothic; display:none">
+Done! We released the key into the guarded aviary and threw the crate into the dark ocean.<br><br>
+<img id="wk" src="key.gif" height="400vw" width="490vw">
+</p>
+    </div>
+    </div>
+
+
+
+<script>
+var modal3 = document.getElementById("secret");
+var btn3 = document.getElementById("talk");
+var span3 = document.getElementsByClassName("close2")[0];
+
+btn3.onclick = function() {
+modal3.style.display = "block";
+}
+span3.onclick = function() {
+modal3.style.display = "none";
+}
+window.addEventListener("click", function(event3) {
+if(event3.target == modal3){
+modal3.style.display = "none";
+}
+})
+document.addEventListener("keydown", function(evt3) {
+evt3 = evt3 || window.event3;
+if (evt3.keyCode == 27) {
+modal3.style.display = "none";
+}
+})
+</script>
+
+
+
+
+<div class="parallax" id="a">
+</div>
+<p class="title" id="a2">
+We hope you can find your peace and calm in here.<br>
+Please remember, no one is more important than yourself.<br>
+Do not lose yourself in the process of finding others because at the end of the day as long as you have yourself, it is enough.<br>
+You are enough.<br>
+</p>
+<br>
+
+
+<div class="footer">
+
+<footer>
+
+<br>
+<h5 class="glow" id="borahae"> BORAHAE 💜</h5>
+
+    <div id="purple">
+    <div class="info" style="background-color:#fff">
+    <span class="close">&times;</span>
+    <h1 style="font-size:150%; color:black"> Borahae💜 </h1>
+    <p class="welcome1" style="color:purple;"> Borahae is a Korean word for 'I purple you' which was made by Kim Taehyung (V) of BTS.<br><br>
+
+It is derived from bora(meaning:purple) and saranghae(meaning :I love you) in korean.<br><br>
+
+“Purple is the last colour of the rainbow colours so it means I will trust and love u for a long time.” A simple definition by Taehyung 🐯💜
+    </p>
+    </div>
+    </div>
+
+
+<script>
+var modal2 = document.getElementById("purple");
+var btn2 = document.getElementById("borahae");
+var span2 = document.getElementsByClassName("close")[0];
+
+btn2.onclick = function() {
+modal2.style.display = "block";
+}
+span2.onclick = function() {
+modal2.style.display = "none";
+}
+window.addEventListener("click", function(event2) {
+if(event2.target == modal2){
+modal2.style.display = "none";
+}
+})
+document.addEventListener("keydown", function(evt2) {
+evt2 = evt2 || window.event2;
+if (evt2.keyCode == 27) {
+modal2.style.display = "none";
+}
+})
+</script>
+
+<div style=" width: 25vw;">
+<hr>
+</div>
+
+  <p class="footerText">
+Love Yourself is copyright 2021 by Chandana. All photos and works by BTS are copyright BigHit Labels and BTS, additional credits provided where necessary. 
+No part of this site or its content may be reproduced without permission. Not affiliated with BTS, BigHit, or HYBE.<br></p>
+<div style=" width: 25vw;">
+<hr>
+</div>
+<p class="footerText" style="color:black; font-family:segoe print;"><b>HAVE A NICE DAY!<br></b>
+</p>
+<br></footer>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
